@@ -20,7 +20,7 @@ def require_api_key(f):
 @app.route('/get-google-token', methods=['GET'])
 @require_api_key
 def get_token():
-    SERVICE_ACCOUNT_FILE = 'account_service_credentials.json'
+    SERVICE_ACCOUNT_FILE = '/etc/secrets/account_service_credentials.json'
     SCOPES = ['https://www.googleapis.com/auth/drive',
               "https://spreadsheets.google.com/feeds"]
 
