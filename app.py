@@ -35,4 +35,4 @@ def get_token():
     return jsonify({'access_token': access_token})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
